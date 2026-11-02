@@ -1,0 +1,184 @@
+/* Tambahan kecil di atas style.css untuk demo library */
+.lib-desc {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.recipe-body {
+  min-width: 0;
+}
+
+.demo-box {
+  position: relative;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  min-height: 150px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f4f0fa;
+}
+
+.demo-box .favorite-button {
+  background: var(--red);
+  box-shadow: 0 4px 0 var(--red-dark);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.demo-box .favorite-button:hover {
+  box-shadow: 0 6px 0 var(--red-dark);
+}
+
+.demo-box .favorite-button:active {
+  box-shadow: 0 0 0 var(--red-dark);
+}
+
+/* Floating UI */
+.kpi {
+  display: grid;
+  gap: 4px;
+  min-width: 180px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 0 #c6bdcf;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.kpi strong {
+  color: var(--ink);
+  font-size: 1.5rem;
+}
+
+.info-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 3px 0 var(--gold-dark);
+  color: #241700;
+  font-weight: 900;
+}
+
+.tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  max-width: 220px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--purple-dark);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  pointer-events: none;
+}
+
+.tip.show {
+  display: block;
+}
+/* Tom Select + Flatpickr */
+.select-box {
+  align-content: start;
+  gap: 12px;
+  place-items: stretch;
+}
+
+.date-input {
+  padding: 12px 14px;
+  border: 2px solid #d7d0df;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.result {
+  margin: 0;
+  color: var(--purple-dark);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.ts-control {
+  border-radius: 8px;
+  font-family: var(--font);
+}
+
+.ts-wrapper.multi .ts-control > div {
+  background: var(--purple);
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+/* Chart.js */
+.chart-box {
+  display: block;
+  height: 210px;
+  background: #fff;
+  border: 2px solid var(--border);
+}
+
+.chart-button {
+  width: 100%;
+  margin-top: 14px;
+  background: var(--blue);
+}
+
+/* Tabulator */
+#tabel {
+  border-radius: 10px;
+  font-family: var(--font);
+  font-size: 0.85rem;
+}
+
+#tabel .tabulator-header {
+  background: var(--purple);
+  color: #fff;
+}
+
+#tabel .tabulator-header .tabulator-col {
+  background: var(--purple);
+}
+
+/* 2 kolom, kartu lebih besar */
+.recipe-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.recipe-body {
+  padding: 28px;
+}
+
+.recipe-title {
+  font-size: 1.5rem;
+}
+
+.lib-desc {
+  font-size: 1.05rem;
+}
+
+.demo-box {
+  min-height: 220px;
+}
+
+.chart-box {
+  height: 280px;
+}
+
+@media (max-width: 760px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+}
